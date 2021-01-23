@@ -12,3 +12,4 @@ print("After extend element of c : ", c)
 for x in f:
     e.append(x)
 print("After extend element of e : ", e)
+
