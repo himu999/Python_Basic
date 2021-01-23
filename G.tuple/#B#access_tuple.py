@@ -1,0 +1,5 @@
+family = ("Father", "Mother", "Brother", "Sister", "Grandfather", "Grandmother")
+print("First member of family : ", family[0])
+print("Some member of family : ", family[2:4])
+print("Most senior member of family : ", family[0:1])
+print("All time great member of family : ", family[-2:])
