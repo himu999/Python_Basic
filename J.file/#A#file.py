@@ -11,3 +11,10 @@ f.close()
 
 f = open("some.txt", "r")
 print(f.readlines())
+
+f.close()
+
+k = open("img.jpg", "br")
+print(k.read())
+
+k.close()
