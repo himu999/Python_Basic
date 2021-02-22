@@ -11,5 +11,16 @@ print("Keys of dictionary :", end=" ")
 for j in name.keys():
     print(j, end=", ")
 print("Items of dictionary :", end=" ")
-for k in  name.items():
+for k in name.items():
     print(k, end=", ")
+print("\n\n")
+
+# Convert a dictionary(keys or values) into list
+
+lst = list(name.values())
+print("Values in list : ", lst)
+
+lst1 = list(name.keys())
+print("Keys in list : ", lst1)
+
+
