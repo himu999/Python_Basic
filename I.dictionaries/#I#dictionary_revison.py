@@ -22,5 +22,7 @@ print("Values in list : ", lst)
 
 lst1 = list(name.keys())
 print("Keys in list : ", lst1)
+print("\n\n")
+
 
 
