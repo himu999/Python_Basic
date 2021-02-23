@@ -12,15 +12,15 @@ while True:
     number = input("Select your operation : ")
 
     if number == '1':
-        name = input("Enter your name : ")
+        name = input("Enter costumer name : ")
         if name in bank_usr.keys():
-            print(name + " Your balance is ", bank_usr[name])
+            print(name + " balance is ", bank_usr[name])
         else:
             print("The user can't found! would you like to add the user to the account?")
             cond = input("Give your opinion : ")
             if cond == "Yes":
-                name1 = input("Enter your name : ")
-                balance = input("Enter your balance : ")
+                name1 = input("Enter costumer name : ")
+                balance = input("Enter costumer balance : ")
                 bank_usr.update({name1: balance})
 
             else:
@@ -35,22 +35,24 @@ while True:
     elif number == "3":
         name = input("Enter your name : ")
         if name in bank_usr.keys():
-            print("Do you want to add or subtract form your savings?")
+            print("Do you want to add or subtract form costumer savings?")
             cond2 = input("Give your opinion : ")
 
             if cond2 == "Add":
                 current_balance = bank_usr[name]
-                amount = int(input("Enter amount t you want to add : "))
+                amount = int(input("Enter amount you want to add : "))
                 new_balance = current_balance + amount
-                print("Balance updated! your current balance is :", new_balance)
+                bank_usr.update({name: new_balance})
+                print("Balance updated! costumer current balance is :", bank_usr[name])
+
             elif cond2 == "Subtract":
                 current_balance = bank_usr[name]
-                amount = int(input("Enter amount t you want to add : "))
+                amount = int(input("Enter amount you want to add : "))
                 new_balance = current_balance - amount
-
-                print("Balance updated! your current balance is :", bank_usr[name])
+                bank_usr.update({name: new_balance})
+                print("Balance updated! costumer current balance is :", bank_usr[name])
         else:
-            print("There is such account in the bank database!!")
+            print("There is no such account in the bank database!!")
     elif number == "4":
         break
 
