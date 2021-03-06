@@ -40,7 +40,5 @@ def merge_two_sorted_list(a, b):
 
 if __name__ == "__main__":
 
-    a = [45, 5, 56, 78, +9, -9, 78, 565, 000, 258]
-    print(merge_sort(a))
-
-
+    z = [45, 5, 56, 78, +9, -9, 78, 565, 000, 258]
+    print(merge_sort(z))
